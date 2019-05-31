@@ -44,6 +44,7 @@
             extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
           }
           fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+          window.AddressFinderActivity.setAddress(data.zonecode, data.roadAddress, data.buildingName);
         }
         var fullRoadAddr = data.roadAddress; // 도로명 주소 변수
         var extraRoadAddr = ''; // 도로명 조합형 주소 변수
